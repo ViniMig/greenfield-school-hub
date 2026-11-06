@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Shared site chrome (header/footer) lives in `src/components/site/` and wraps `<Outlet />` in `src/routes/__root.tsx` — one shell for every page.
+- Mock content (nav items, news) lives in `src/lib/site.ts` — single source until a real backend exists.
