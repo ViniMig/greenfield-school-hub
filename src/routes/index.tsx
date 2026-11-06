@@ -85,7 +85,8 @@ const quickLinks = [
 ] as const;
 
 function Index() {
-  const [featured, ...rest] = news;
+  const featured = news[0]!;
+  const rest = news.slice(1);
   return (
     <>
       {/* Welcome */}
