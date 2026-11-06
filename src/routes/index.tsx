@@ -16,16 +16,16 @@ import hero from "@/assets/hero-campus.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Brookvale School — Learn, Grow, Belong" },
+      { title: "Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira — Learn, Grow, Belong" },
       {
         name: "description",
         content:
-          "Welcome to Brookvale School: latest news, admissions, academics and everything families need in one place.",
+          "Welcome to Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira: latest news, admissions, academics and everything families need in one place.",
       },
-      { property: "og:title", content: "Brookvale School — Learn, Grow, Belong" },
+      { property: "og:title", content: "Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira — Learn, Grow, Belong" },
       {
         property: "og:description",
-        content: "Latest news, admissions, academics and quick links for Brookvale School families.",
+        content: "Latest news, admissions, academics and quick links for Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira families.",
       },
     ],
   }),
@@ -93,7 +93,7 @@ function Index() {
       <section className="relative isolate flex min-h-[92vh] items-end overflow-hidden pb-16 pt-40 md:pb-24">
         <img
           src={hero}
-          alt="Students walking across the Brookvale School campus"
+          alt="Students walking across the Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira campus"
           width={1600}
           height={1008}
           className="absolute inset-0 -z-20 h-full w-full object-cover"
@@ -103,7 +103,7 @@ function Index() {
           <div className="max-w-3xl animate-rise text-hero-foreground">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-hero-foreground/25 bg-hero-foreground/10 px-4 py-1.5 text-sm font-medium backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-primary" />
-              Welcome to Brookvale School
+              Welcome to Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira
             </p>
             <h1 className="text-5xl font-extrabold leading-[0.98] md:text-7xl lg:text-8xl">
               Where curious minds <span className="text-primary">grow</span> together.
@@ -151,7 +151,7 @@ function Index() {
           </div>
           <div className="space-y-5 text-lg text-muted-foreground">
             <p>
-              At Brookvale, we believe great learning happens when students feel known. Our teachers combine high
+              At Escola Vini Oliveira, we believe great learning happens when students feel known. Our teachers combine high
               expectations with genuine care, so every young person leaves us confident, kind and ready for what comes
               next.
             </p>
@@ -169,7 +169,7 @@ function Index() {
           <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Latest news</p>
-              <h2 className="text-3xl font-bold md:text-5xl">What's happening at Brookvale</h2>
+              <h2 className="text-3xl font-bold md:text-5xl">What's happening at Escola Vini Oliveira</h2>
             </div>
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/news">
@@ -248,7 +248,7 @@ function Index() {
             <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-hero-foreground/10 blur-2xl" />
             <div className="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
               <div>
-                <h2 className="text-3xl font-bold md:text-4xl">Come and see Brookvale for yourself.</h2>
+                <h2 className="text-3xl font-bold md:text-4xl">Come and see Escola Vini Oliveira for yourself.</h2>
                 <p className="mt-2 text-primary-foreground/85">Winter Open Day · Saturday 5 December, 10:00–14:00</p>
               </div>
               <Button asChild variant="glass" size="xl">

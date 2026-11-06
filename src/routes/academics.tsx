@@ -5,10 +5,10 @@ import { InfoCard, PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/academics")({
   head: () => ({
     meta: [
-      { title: "Academics — Brookvale School" },
-      { name: "description", content: "Curriculum, subjects and learning support at Brookvale School." },
-      { property: "og:title", content: "Academics — Brookvale School" },
-      { property: "og:description", content: "Curriculum, subjects and learning support at Brookvale School." },
+      { title: "Academics — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "Curriculum, subjects and learning support at Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
+      { property: "og:title", content: "Academics — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { property: "og:description", content: "Curriculum, subjects and learning support at Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
     ],
   }),
   component: AcademicsPage,

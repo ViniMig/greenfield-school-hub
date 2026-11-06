@@ -4,10 +4,10 @@ import { PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/calendar")({
   head: () => ({
     meta: [
-      { title: "Term Calendar — Brookvale School" },
-      { name: "description", content: "Term dates, holidays, exams and upcoming events at Brookvale School." },
-      { property: "og:title", content: "Term Calendar — Brookvale School" },
-      { property: "og:description", content: "Term dates, holidays and upcoming events at Brookvale School." },
+      { title: "Term Calendar — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "Term dates, holidays, exams and upcoming events at Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
+      { property: "og:title", content: "Term Calendar — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { property: "og:description", content: "Term dates, holidays and upcoming events at Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
     ],
   }),
   component: CalendarPage,

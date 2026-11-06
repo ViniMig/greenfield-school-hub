@@ -6,10 +6,10 @@ import { news } from "@/lib/site";
 export const Route = createFileRoute("/news")({
   head: () => ({
     meta: [
-      { title: "News — Brookvale School" },
-      { name: "description", content: "The latest stories, achievements and announcements from Brookvale School." },
-      { property: "og:title", content: "News — Brookvale School" },
-      { property: "og:description", content: "The latest stories and announcements from Brookvale School." },
+      { title: "News — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "The latest stories, achievements and announcements from Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
+      { property: "og:title", content: "News — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { property: "og:description", content: "The latest stories and announcements from Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
     ],
   }),
   component: NewsPage,
