@@ -47,85 +47,87 @@ export function SiteHeader() {
   const isHidden = hidden && !open;
 
   return (
-    <header
-      onMouseEnter={() => (hovering.current = true)}
-      onMouseLeave={() => (hovering.current = false)}
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-transform duration-500 ease-[cubic-bezier(0.2,0.7,0.2,1)]",
-        isHidden ? "-translate-y-full" : "translate-y-0",
-      )}
-    >
-      {/* Utility bar */}
-      <div
+    <>
+      <header
+        onMouseEnter={() => (hovering.current = true)}
+        onMouseLeave={() => (hovering.current = false)}
         className={cn(
-          "hidden overflow-hidden bg-deep text-deep-foreground transition-all duration-300 md:block",
-          scrolled ? "max-h-0" : "max-h-10",
+          "fixed inset-x-0 top-0 z-50 transition-transform duration-500 ease-[cubic-bezier(0.2,0.7,0.2,1)]",
+          isHidden ? "-translate-y-full" : "translate-y-0",
         )}
       >
-        <div className="container-site flex h-9 items-center justify-between text-xs">
-          <p className="opacity-80">Winter Open Day · Saturday 5 December · Book your visit</p>
-          <div className="flex items-center gap-5 opacity-80">
-            <a href="tel:+441234567890" className="flex items-center gap-1.5 hover:opacity-100">
-              <Phone className="h-3 w-3" /> 01234 567 890
-            </a>
-            <Link to="/calendar" className="hover:opacity-100">
-              Term dates
-            </Link>
-            <Link to="/contact" className="hover:opacity-100">
-              Parent portal
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Main bar */}
-      <div
-        className={cn(
-          "border-b transition-all duration-300",
-          scrolled
-            ? "border-border/70 bg-background/85 shadow-card backdrop-blur-xl"
-            : "border-transparent bg-background/70 backdrop-blur-md",
-        )}
-      >
-        <div className="container-site flex h-[4.5rem] items-center justify-between gap-6">
-          <Logo />
-
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
-            {mainNav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                activeOptions={{ exact: item.to === "/" }}
-                className="relative rounded-full px-3.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground data-[status=active]:text-foreground data-[status=active]:after:absolute data-[status=active]:after:inset-x-3.5 data-[status=active]:after:-bottom-0.5 data-[status=active]:after:h-0.5 data-[status=active]:after:rounded-full data-[status=active]:after:bg-gradient-brand"
-              >
-                {item.label}
+        {/* Utility bar */}
+        <div
+          className={cn(
+            "hidden overflow-hidden bg-deep text-deep-foreground transition-all duration-300 md:block",
+            scrolled ? "max-h-0" : "max-h-10",
+          )}
+        >
+          <div className="container-site flex h-9 items-center justify-between text-xs">
+            <p className="opacity-80">Winter Open Day · Saturday 5 December · Book your visit</p>
+            <div className="flex items-center gap-5 opacity-80">
+              <a href="tel:+441234567890" className="flex items-center gap-1.5 hover:opacity-100">
+                <Phone className="h-3 w-3" /> 01234 567 890
+              </a>
+              <Link to="/calendar" className="hover:opacity-100">
+                Term dates
               </Link>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-2">
-            <Button asChild variant="brand" className="hidden sm:inline-flex">
-              <Link to="/admissions">Apply now</Link>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full lg:hidden"
-              aria-label={open ? "Close menu" : "Open menu"}
-              aria-expanded={open}
-              onClick={() => setOpen((o) => !o)}
-            >
-              {open ? <X className="!size-5" /> : <Menu className="!size-5" />}
-            </Button>
+              <Link to="/contact" className="hover:opacity-100">
+                Parent portal
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobile menu */}
+        {/* Main bar */}
+        <div
+          className={cn(
+            "border-b transition-all duration-300",
+            scrolled
+              ? "border-border/70 bg-background/85 shadow-card backdrop-blur-xl"
+              : "border-transparent bg-background/70 backdrop-blur-md",
+          )}
+        >
+          <div className="container-site flex h-[4.5rem] items-center justify-between gap-6">
+            <Logo />
+
+            <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+              {mainNav.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  activeOptions={{ exact: item.to === "/" }}
+                  className="relative rounded-full px-3.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground data-[status=active]:text-foreground data-[status=active]:after:absolute data-[status=active]:after:inset-x-3.5 data-[status=active]:after:-bottom-0.5 data-[status=active]:after:h-0.5 data-[status=active]:after:rounded-full data-[status=active]:after:bg-gradient-brand"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="flex items-center gap-2">
+              <Button asChild variant="brand" className="hidden sm:inline-flex">
+                <Link to="/admissions">Apply now</Link>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full lg:hidden"
+                aria-label={open ? "Close menu" : "Open menu"}
+                aria-expanded={open}
+                onClick={() => setOpen((o) => !o)}
+              >
+                {open ? <X className="!size-5" /> : <Menu className="!size-5" />}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile menu (outside the transformed header so fixed positioning works) */}
       <div
         className={cn(
-          "fixed inset-x-0 bottom-0 top-[4.5rem] bg-background/98 backdrop-blur-xl transition-all duration-300 md:top-[6.75rem] lg:hidden",
-          scrolled && "md:top-[4.5rem]",
+          "fixed inset-0 z-40 overflow-y-auto bg-background pt-[4.5rem] transition-opacity duration-300 md:pt-[6.75rem] lg:hidden",
+          scrolled && "md:pt-[4.5rem]",
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
         )}
       >
@@ -152,6 +154,6 @@ export function SiteHeader() {
           </Button>
         </nav>
       </div>
-    </header>
+    </>
   );
 }
