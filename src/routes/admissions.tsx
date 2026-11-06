@@ -6,10 +6,10 @@ import { PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/admissions")({
   head: () => ({
     meta: [
-      { title: "Admissions — Brookvale School" },
-      { name: "description", content: "How to apply to Brookvale School for September 2027: steps and key dates." },
-      { property: "og:title", content: "Admissions — Brookvale School" },
-      { property: "og:description", content: "How to apply to Brookvale School: steps and key dates." },
+      { title: "Admissions — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "How to apply to Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira for September 2027: steps and key dates." },
+      { property: "og:title", content: "Admissions — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { property: "og:description", content: "How to apply to Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira: steps and key dates." },
     ],
   }),
   component: AdmissionsPage,
@@ -27,7 +27,7 @@ function AdmissionsPage() {
     <>
       <PageHeader
         eyebrow="Admissions"
-        title="Joining Brookvale in four simple steps."
+        title="Joining Escola Vini Oliveira in four simple steps."
         intro="Applications for September 2027 are now open for Year 7 and Sixth Form."
       />
       <section className="container-site py-20">

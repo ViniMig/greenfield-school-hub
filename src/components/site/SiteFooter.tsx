@@ -40,15 +40,15 @@ export function SiteFooter() {
             Get in touch
           </h3>
           <ul className="space-y-3 text-sm text-deep-foreground/80">
-            <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 12 Riverside Lane, Brookvale, BV1 2SC</li>
+            <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 12 Riverside Lane, Lisboa, BV1 2SC</li>
             <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 01234 567 890</li>
-            <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> hello@brookvale.school</li>
+            <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> ola@escolavinioliveira.pt</li>
           </ul>
         </div>
       </div>
       <div className="relative border-t border-deep-foreground/10">
         <div className="container-site flex flex-col gap-2 py-6 text-xs text-deep-foreground/50 sm:flex-row sm:justify-between">
-          <p>© 2026 Brookvale School. Website mockup.</p>
+          <p>© 2026 Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira. Website mockup.</p>
           <p>Learn · Grow · Belong</p>
         </div>
       </div>

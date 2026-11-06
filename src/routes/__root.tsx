@@ -80,8 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Brookvale School" },
-      { name: "description", content: "Brookvale School — learn, grow, belong." },
+      { title: "Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira — learn, grow, belong." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

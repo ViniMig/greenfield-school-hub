@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function Logo({ className, inverted }: { className?: string; inverted?: boolean }) {
   return (
-    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="Brookvale School home">
+    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira home">
       <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-brand shadow-brand transition-transform group-hover:rotate-[-6deg]">
         <svg viewBox="0 0 32 32" className="h-6 w-6 text-primary-foreground" fill="none" aria-hidden>
           <path d="M16 4c5 4 7 8 7 12a7 7 0 1 1-14 0c0-4 2-8 7-12Z" fill="currentColor" opacity=".9" />
@@ -17,7 +17,7 @@ export function Logo({ className, inverted }: { className?: string; inverted?: b
             inverted ? "text-deep-foreground" : "text-foreground",
           )}
         >
-          Brookvale
+          Escola Vini Oliveira
         </span>
         <span
           className={cn(
@@ -25,7 +25,7 @@ export function Logo({ className, inverted }: { className?: string; inverted?: b
             inverted ? "text-deep-foreground/60" : "text-muted-foreground",
           )}
         >
-          School · Est. 1962
+          EB 1,2,3,4,5 · Sr. Dr. Eng. Arq.
         </span>
       </span>
     </Link>

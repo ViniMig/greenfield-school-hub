@@ -5,10 +5,10 @@ import { InfoCard, PageHeader } from "@/components/site/PageHeader";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Brookvale School" },
-      { name: "description", content: "The story, values and leadership behind Brookvale School since 1962." },
-      { property: "og:title", content: "About Us — Brookvale School" },
-      { property: "og:description", content: "The story, values and leadership behind Brookvale School." },
+      { title: "About Us — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { name: "description", content: "The story, values and leadership behind Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira since 1962." },
+      { property: "og:title", content: "About Us — Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira" },
+      { property: "og:description", content: "The story, values and leadership behind Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira." },
     ],
   }),
   component: AboutPage,
@@ -20,7 +20,7 @@ function AboutPage() {
       <PageHeader
         eyebrow="About us"
         title="Sixty years of learning by the river."
-        intro="Founded in 1962, Brookvale has grown from a small village school into a thriving community of 1,240 students — without losing its warmth."
+        intro="Founded in 1962, Escola Vini Oliveira has grown from a small village school into a thriving community of 1,240 students — without losing its warmth."
       />
       <section className="container-site grid gap-6 py-20 md:grid-cols-3">
         <InfoCard icon={<Sparkles className="h-6 w-6" />} title="Curiosity">

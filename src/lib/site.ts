@@ -2,7 +2,7 @@ import robotics from "@/assets/news-robotics.jpg";
 import sports from "@/assets/news-sports.jpg";
 import library from "@/assets/news-library.jpg";
 
-export const SCHOOL_NAME = "Brookvale School";
+export const SCHOOL_NAME = "Escola EB 1,2,3,4,5 Senhor Doutor Engenheiro Arquiteto Vini Oliveira";
 
 export const mainNav = [
   { to: "/", label: "Home" },
@@ -35,7 +35,7 @@ export const news: NewsItem[] = [
   },
   {
     slug: "football-cup-final",
-    title: "Brookvale Blues reach the county cup final",
+    title: "Vini Oliveira Blues reach the county cup final",
     excerpt:
       "A last-minute header sealed a 2–1 semi-final victory. The final is on 21 November — come and cheer!",
     date: "2026-10-29",
@@ -55,7 +55,7 @@ export const news: NewsItem[] = [
     slug: "open-day-december",
     title: "Winter Open Day: registrations now open",
     excerpt:
-      "Families considering Brookvale for September 2027 can book a guided tour with our students and teachers.",
+      "Families considering Escola Vini Oliveira for September 2027 can book a guided tour with our students and teachers.",
     date: "2026-10-20",
     category: "Admissions",
   },
